@@ -1,10 +1,11 @@
 .conversejs {
-    @import "bootstrap/scss/buttons";
-    @import "bootstrap/scss/button-group";
+    @import 'bootstrap/scss/buttons';
+    @import 'bootstrap/scss/button-group';
 
     .btn {
         font-weight: normal;
         color: var(--button-text-color);
+        padding: 14px 8px;
         &:hover {
             color: var(--button-hover-text-color);
         }
@@ -12,7 +13,9 @@
             color: var(--button-text-color) !important;
         }
         i {
-            &.fa, &.far, &.fas {
+            &.fa,
+            &.far,
+            &.fas {
                 color: var(--button-text-color);
                 margin-right: 0.5em;
                 &.only-icon {
@@ -27,11 +30,15 @@
     }
 
     .btn-primary {
-        background-color: var(--primary-color) !important;
+        background-color: #ff3840 !important;
         border-color: transparent !important;
-        &:focus, &:hover, &:active {
-            color: var(--button-text-color);
-            background-color: var(--primary-color-dark) !important;
+        border-radius: 8px;
+        color: #ffffff;
+        &:focus,
+        &:hover,
+        &:active {
+            color: #ffffff;
+            background-color: #ff3840 !important;
             border-color: transparent !important;
         }
     }
@@ -51,7 +58,8 @@
         border-radius: 50%;
     }
 
-    .btn-info, .badge-info {
+    .btn-info,
+    .badge-info {
         background-color: var(--primary-color);
         border-color: var(--primary-color);
         &:hover {
@@ -61,7 +69,8 @@
     }
 
     .button-cancel,
-    .btn-secondary, .badge-secondary {
+    .btn-secondary,
+    .badge-secondary {
         color: var(--button-text-color);
         background-color: var(--secondary-color);
         border-color: var(--secondary-color);
@@ -78,7 +87,7 @@
         &:hover {
             color: var(--button-text-color);
             background-color: var(--warning-color-dark);
-            border-color: var(--warning-color-dark)
+            border-color: var(--warning-color-dark);
         }
     }
 

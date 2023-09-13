@@ -1,8 +1,8 @@
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/mixins";
-@import "shared/styles/_variables.scss";
-@import "shared/styles/_mixins.scss";
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import 'shared/styles/_variables.scss';
+@import 'shared/styles/_mixins.scss';
 
 .conversejs {
     .set-xmpp-status,
@@ -71,10 +71,21 @@
 
         .brand-name-wrapper {
             font-size: 200%;
+            width: 150px;
+            img {
+                width: 100%;
+                display: block;
+            }
         }
 
         .brand-name-wrapper--fullscreen {
             font-size: 100%;
+            display: block;
+            width: 250px;
+            img {
+                width: 100%;
+                display: block;
+            }
         }
 
         .box-flyout {
@@ -122,7 +133,8 @@
             }
         }
 
-        #converse-login-panel, #converse-register-panel {
+        #converse-login-panel,
+        #converse-register-panel {
             padding-top: 0;
             padding-bottom: 0;
         }
@@ -154,9 +166,9 @@
             padding: 0;
 
             .add-chatroom {
-                input[type=button],
-                input[type=submit],
-                input[type=text] {
+                input[type='button'],
+                input[type='submit'],
+                input[type='text'] {
                     width: 100%;
                 }
                 margin: 0;
@@ -165,7 +177,6 @@
         }
 
         .controlbox-section {
-
             .controlbox-heading {
                 font-family: var(--heading-font);
                 color: var(--controlbox-heading-color);
@@ -289,12 +300,23 @@
             .switch-form {
                 text-align: center;
                 padding: 2em 0;
+                p {
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #8a92a8;
+                    a {
+                        padding: 0;
+                        font-weight: 600;
+                        text-decoration: underline;
+                        color: #8a92a8;
+                    }
+                }
             }
             dd {
                 margin-left: 0;
                 margin-bottom: 0;
                 &.odd {
-                    background-color: #DCEAC5;
+                    background-color: #dceac5;
                 }
             }
         }
@@ -315,7 +337,6 @@
 .conversejs {
     converse-chats {
         &.converse-overlayed {
-
             display: flex;
             flex-direction: row-reverse;
 
@@ -365,7 +386,8 @@
                     }
                 }
 
-                #converse-register, #converse-login {
+                #converse-register,
+                #converse-login {
                     @include make-col(12);
                     padding-bottom: 0;
                 }
@@ -381,6 +403,7 @@
                 padding-top: 0.8rem;
                 padding-left: 0.8rem;
                 width: 100%;
+                margin: 0;
             }
             .converse-svg-logo {
                 height: 1em;
@@ -396,7 +419,7 @@
         }
 
         &.converse-embedded,
-        &.converse-fullscreen{
+        &.converse-fullscreen {
             .controlbox-panes {
                 border-right: 0.2rem solid var(--panel-divider-color);
             }
@@ -449,9 +472,10 @@
                     .brand-heading {
                         width: 100%;
                         font-size: 500%;
-                        padding: 0.7em 0 0 0;
+                        padding: 0;
                         opacity: 0.8;
                         color: var(--brand-heading-color);
+                        margin: 0;
                     }
                     .brand-subtitle {
                         font-size: 90%;
@@ -483,7 +507,8 @@
                     }
                 }
 
-                #converse-register, #converse-login {
+                #converse-register,
+                #converse-login {
                     @include make-col-ready();
                     @include make-col(8);
                     @include make-col-offset(2);
@@ -500,11 +525,12 @@
                         @include make-col(6);
                         @include make-col-offset(3);
                     }
-                    .title, .instructions {
+                    .title,
+                    .instructions {
                         margin: 1em 0;
                     }
-                    input[type=submit],
-                    input[type=button] {
+                    input[type='submit'],
+                    input[type='button'] {
                         width: auto;
                     }
                 }
@@ -529,7 +555,6 @@
 }
 
 @include media-breakpoint-down(sm) {
-
     .conversejs {
         left: 0;
         right: 0;

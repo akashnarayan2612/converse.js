@@ -1,7 +1,7 @@
 .conversejs.theme-dracula {
     // Theme-defined variables:
     // https://draculatheme.com
-    --current-line: #44475a;
+    --current-line: #ababab;
     --comment: #6272a4;
     --cyan: #8be9fd;
     --green: #50fa7b;
@@ -12,7 +12,7 @@
     --yellow: #f1fa8c;
 
     // Base variables
-    --background: #282a36;
+    --background: #161c23;
     --foreground: #f8f8f2;
     --subdued-color: var(--comment);
     --muc-color: var(--orange);
@@ -111,7 +111,7 @@
     --completion-dark-color: var(--current-line);
 
     --button-text-color: var(--background);
-    --button-hover-text-color: var(--background);
+    --button-hover-text-color: #ffffff;
 
     --controlbox-text-color: var(--foreground);
     --message-text-color: var(--foreground);

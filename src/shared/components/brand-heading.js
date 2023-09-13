@@ -4,10 +4,9 @@ import { CustomElement } from './element.js';
 import { api } from '@converse/headless';
 import { html } from 'lit/html.js';
 
-
 export class ConverseBrandHeading extends CustomElement {
-
-    render () { // eslint-disable-line class-methods-use-this
+    render() {
+        // eslint-disable-line class-methods-use-this
         return html`
             <converse-brand-logo></converse-brand-logo>
             <converse-brand-byline></converse-brand-byline>
