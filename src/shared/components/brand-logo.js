@@ -9,7 +9,7 @@ export class ConverseBrandLogo extends CustomElement {
         return html`
             <a class="brand-heading" href="https://conversejs.org" target="_blank" rel="noopener">
                 <span class="brand-name-wrapper ${is_fullscreen ? 'brand-name-wrapper--fullscreen' : ''}">
-                    <img src="images/logo-white.png" />
+                    <img src="dist/images/logo-white.png" />
                 </span>
             </a>
         `;
